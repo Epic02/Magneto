@@ -9,4 +9,9 @@ class Trace(BaseModel):
     lng_lower_limit = models.FloatField()
     lat_upper_limit = models.FloatField()
     lat_lower_limit = models.FloatField()
+    date = models.DateField()
     trace_file_url = models.CharField(max_length=512, default="")
+
+
+class Count(BaseModel):
+    count = models.IntegerField(default=0)

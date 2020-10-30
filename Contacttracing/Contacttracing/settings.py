@@ -25,7 +25,7 @@ SECRET_KEY = 'jjwbji&39dn(q2k)6l1^f#=m*$3)ml$rz-9_4zil=tly$#46bk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1:8888', '*']
 
 
 # Application definition
@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'oauth2_provider',
+    'Contacttracing.apps.contact',
+    'Contacttracing.apps.tracer',
+    'Contacttracing.apps.users',
 ]
 
 MIDDLEWARE = [

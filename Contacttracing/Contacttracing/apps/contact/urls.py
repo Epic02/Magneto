@@ -1,6 +1,5 @@
 from django.urls import path
 from . import views
-
 urlpatterns = [
-    path('', views.TraceView.as_view(), name='trace-crud'),
+    path('', views.ContactCheckerView.as_view(), name='contact')
 ]
